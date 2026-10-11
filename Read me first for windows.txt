@@ -1,0 +1,91 @@
+VIDEO / MP3 DOWNLOADER - USER GUIDE
+====================================
+Program by-->Tanjiur Rahman Twha
+
+WHAT IS THIS?
+A simple tool to download videos or MP3 songs from YouTube,
+Instagram and many other sites. Just paste the link and click
+Download. It help you to avoide the add  :) 
+
+FILES YOU NEED (keep them in the same folder)
+1. python Setup.bat
+2. Downloader.pyw
+
+
+FIRST TIME SETUP (do this once on each PC)
+------------------------------------------
+1. Connect to the internet.
+2. Double-click "python Setup.bat".
+3. If Windows shows "Windows protected your PC":
+   click "More info", then click "Run anyway".
+4. Wait 2-5 minutes. The setup will:
+   - install Python (if it is not already installed)
+   - install the needed components
+   - create a shortcut on your Desktop
+5. When you see "DONE!", press any key to close the window.
+
+
+HOW TO USE
+----------
+1. Double-click "Video MP3 Downloader" on your Desktop.
+2. Wait until the message says "Ready!"
+   (The first time may take a little longer.)
+3. Copy a video link from YouTube or Instagram.
+4. Click "Paste" (or paste the link in the box yourself).
+5. Choose what you want from the list:
+   - MP3 Song - Good (320kbps)    = best sound quality
+   - MP3 Song - Medium (192kbps)  = smaller file size
+   - Video - Max                  = highest video quality
+   - Video - 1080p / 720p / 480p  = choose by quality and data use
+6. Click "Download".
+7. Wait for the progress bar to finish and the message
+   "Success!" to appear.
+8. Click "Open Download folder" to see your file.
+
+
+WHERE ARE MY FILES?
+-------------------
+Downloads > MyDownloads
+(Full path: C:\Users\<your name>\Downloads\MyDownloads)
+
+
+UPDATES
+-------
+The tool updates itself once a day when you open it with
+internet on. You do not need to do anything.
+
+
+COMMON PROBLEMS AND FIXES
+-------------------------
+Problem: "Setup not working" message
+Fix:     Check your internet and open the program again.
+
+Problem: Download shows an error
+Fix:     - Check that the link is correct and starts with http.
+         - Make sure the video is public (not private).
+         - Close the program, connect to the internet, and open
+           it again so it can update itself. Then try again.
+
+Problem: python Setup.bat says Python could not be found after install
+Fix:     Close the window and run python Setup.bat one more time.
+
+Problem: Windows has no "winget"
+Fix:     Install Python manually from python.org
+         (tick "Add Python to PATH"), then run python Setup.bat again.
+
+Problem: Shortcut stopped working
+Fix:     Run python Setup.bat again. It will recreate the shortcut.
+
+
+IMPORTANT NOTES
+---------------
+- Use this tool only for your personal use.
+- Respect copyright. Do not share or sell downloaded content.
+- Some private or login-only videos cannot be downloaded.
+- Playlists are not supported (only single videos).
+
+
+TO INSTALL ON ANOTHER PC
+------------------------
+Copy "python Setup.bat" and "Downloader.pyw" to a pendrive, put them
+in one folder on the other PC, and double-click "python Setup.bat".
