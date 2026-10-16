@@ -1,38 +1,43 @@
 # Video / MP3 Downloader
 
-A simple desktop tool to download videos or MP3 songs from YouTube, Instagram and many other sites. Paste a link, choose a quality, click **Download**. No ads, no complicated commands.
+A simple desktop app to download videos or MP3 songs from YouTube, Instagram and many other sites.
+Paste a link, pick a format, and let it run. No ads, no commands... 
 
-Built with Python, [yt-dlp](https://github.com/yt-dlp/yt-dlp) and a small Tkinter window.
-**Download** ZIp.rar and extract there have everything... :) 
-
-**Program by Tanjiur Rahman Twha**
+Built with Python, [yt-dlp](https://github.com/yt-dlp/yt-dlp) and Tkinter.
+**By tanjiur21**
 
 ## Features
 
-- Paste a link and download with one click
-- MP3 (320 kbps or 192 kbps) or video (Max, 1080p, 720p, 480p)
-- Choose the folder where files are saved (remembered next time)
-- Progress bar with download speed
-- Updates yt-dlp automatically once a day, so downloads keep working
-- No separate ffmpeg install needed (it is set up automatically)
-- One-click setup for Windows
+- Paste a link and see the video title before downloading
+- **MP3** (320 / 192 / 128 kbps) or **Video** (Max, 1080p, 720p, 480p, 360p)
+- **Download queue**: add many links, they download one by one
+- Download a **whole playlist** into its own folder
+- **Auto-organize**: songs go to `Music`, videos go to `Videos`
+- Choose your save folder (remembered next time)
+- Cancel a download, or clear the finished ones
+- Auto-updates yt-dlp once a day, plus an **Update** button
+- No separate ffmpeg install needed
 
 ## Files
 
-| File | Purpose |
-|------|---------|
-| `Downloader.pyw` | The program |
-| `Setup.bat` | One-click setup for Windows (installs Python and everything needed, creates a Desktop shortcut) |
+| File |
+`Downloader.pyw`
+`Setup.bat` 
 
-## Windows setup (once per PC)
+| What it does |
 
-1. Download this repository (green **Code** button, then **Download ZIP**) and extract it.
-2. Make sure `Setup.bat` and `Downloader.pyw` are in the same folder.
-3. Double-click `Setup.bat`.
-   If Windows shows "Windows protected your PC", click **More info**, then **Run anyway**.
-4. Wait 2-5 minutes (internet needed). A shortcut named **Video MP3 Downloader** appears on your Desktop.
+| `Downloader.pyw` | The app |
+| `Setup.bat` | One-click setup for Windows (installs everything and adds a Desktop shortcut) |
 
-## Linux setup
+## Install on Windows
+
+1. Click the green **Code** button, then **Download ZIP**, and extract it.
+2. Keep `Setup.bat` and `Downloader.pyw` in the same folder.
+3. Double-click **`Setup.bat`** and wait 2-5 minutes (internet needed).
+   If Windows says "Windows protected your PC", click **More info**, then **Run anyway**.
+4. Open **Video MP3 Downloader** from your Desktop.
+
+## Install on Linux
 
 ```bash
 sudo apt install python3 python3-tk python3-venv
@@ -41,30 +46,40 @@ python3 -m venv ~/videodl
 ~/videodl/bin/python Downloader.pyw
 ```
 
-(Fedora: `sudo dnf install python3 python3-tkinter` / Arch: `sudo pacman -S python tk`)
-
 ## How to use
 
-1. Open **Video MP3 Downloader** and wait for the message "Ready!"
-2. Copy a video link, click **Paste**
-3. Choose MP3 or a video quality
-4. Choose the save folder with **Browse** (optional)
-5. Click **Download**
-6. Click **Open Download folder** to find your file
+1. Copy a video link. It appears in the box automatically (or click **Paste**).
+2. Choose **MP3** or **Video** and the quality.
+3. Choose where to save with **Browse** (optional).
+4. Click **Add to downloads**. Add more links any time.
+5. Click **Open folder** to find your files.
 
-Default save folder: `Downloads/MyDownloads`
+Default folder: `Downloads/MyDownloads`
+
+## Settings
+
+Click **Settings** to:
+
+- **Browser login**: fixes the YouTube message *"Sign in to confirm you're not a bot"*. Otherwise it make some problem..
+  Choose the browser where you are logged in to YouTube (Firefox works best).
+- **Auto-organize**: turn the Music / Videos folders on or off.
 
 ## Troubleshooting
 
-- **Setup not working**: check your internet connection and open the program again.
-- **Download error**: make sure the link starts with `http`, the video is public, then reopen the program so it can update itself and try again.
-- **Setup.bat cannot find Python after install**: close the window and run `Setup.bat` once more.
-- **No `winget` on Windows**: install Python from [python.org](https://www.python.org/downloads/) (tick "Add Python to PATH"), then run `Setup.bat` again.
+| Problem | Fix |
+|---------|-----|
+| "Sign in to confirm you're not a bot" | Open **Settings** and choose your browser, then add the link again |
+| A download shows **Failed** | Double-click it to see the reason |
+| Downloads suddenly stop working | Click **Update yt-dlp**, then restart the app |
+| Setup failed | Check your internet connection and open the app again |
+| Setup.bat can't find Python | Close it and run `Setup.bat` once more |
+| No `winget` on Windows | Install Python from [python.org](https://www.python.org/downloads/) (tick "Add Python to PATH"), then run `Setup.bat` again |
 
 ## Disclaimer
 
-This tool is for **personal use only**. Downloading content may violate the terms of the website or the rights of the content owner. You are responsible for how you use it. Respect copyright and do not share or sell downloaded content. Private or login-only videos and playlists are not supported.
-
+For **personal use only**. Downloading content may break a website's terms or the owner's rights.
+You are responsible for how you use this tool. Respect copyright and do not share or sell downloaded content.
+Private or login-only videos may not work.
 This project is not affiliated with YouTube, Instagram or any other website.
 
 ## License
